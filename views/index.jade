@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Add a bird species
+  form(method = "POST", action="/createBird")
+    p species 
+    input(required, type= "text", name= "name", placeholder= "name")
+    p nickname 
+    input(required, type= "text", name= "nickname", placeholder= "nickname")
+    p status 
+    input(required, type= "text", name= "status", placeholder= "status")
+    p 
+    input(type="submit", value = "createBird")
+  
+  
